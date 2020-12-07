@@ -17,8 +17,10 @@ int main(int argc, char *argv[]){
 
     dl_list_t my_list = {NULL, NULL};
 
-    /*  testing leaks uncomment this and comment while loop
-     *  then do valgrind --leak-check=yes ./oppgave3
+    /*  testing leaks uncomment this
+     *  and comment while loop
+     *  run make
+     *  then do valgrind --leak-check=summary ./oppgave3
      init_test_data(&my_list);
      get_index_by_name(&my_list, "Buffer Overflowin");
      get_node_by_index(&my_list, 8);
