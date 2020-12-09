@@ -4,12 +4,12 @@
 #include <string.h>
 #include "include/bubblesort.h"
 
-// This program is supposed to bubblesort struct alphabetically by its fields name.
+// This program is supposed to bubblesort struct alphabetically by the field 'data_string'.
 // I might have misunderstood this part.
 // "Structen skal inneholde tekstrengen... og en 'peker' til arrayet structen er en del av".
 // I have assigned indices to the struct in the loop
 // get_struct_index works anyway since we're required to only use a struct as parameter.
-// Since the sorting algorithm supposed to only sort struct's content alphabetically.
+// As mentioned the sorting algorithm is supposed to only sort struct's content alphabetically.
 // I would then assume it does not really matter much.
 
 int main(int argc, char *argv[]){
