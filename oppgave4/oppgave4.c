@@ -132,10 +132,8 @@ int ProcessCreditcardPayment(int a, char* c, char* e, char* p) {
 
    
     if (strncmp(cc->p->digit, "123", 3) == 0) {
-     	// The denominator becomes 0 when last digit is either 0 or 9.
-    	// Because 0 mod 9 and 9 mod 9 is 0 anything divide by zero is undefined.
-    	// Thus would this program might crash due to SIGFPE.
-        // This function can also cause undefined behaviour since it can read something out of bound
+        // This line can either cause SIGFPE or undefined behaviour since it can read something out of bound
+        // The latter happends when denominator is not 0
         //j = cc->p->digit[cc-p->digit[3] / ((cc->p->digit[3]-'0') % 9)];
         j = cc->p->digit[3]-'0';
     } else {
