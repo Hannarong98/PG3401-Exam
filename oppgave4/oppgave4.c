@@ -143,7 +143,8 @@ int ProcessCreditcardPayment(int a, char* c, char* e, char* p) {
     /* Call backend function: */
 
     // Calling free(cc); is not enough
-    // We have to free the whole list to deallocate all memory that were allocated in the loop
+    // We have to free the whole list to deallocate all memory that were allocated by the init loop
+    // free(cc);
     Backendprocesspayment(a, llCreditcard, cc, e, j);
     while(cc != NULL){
         CCD *next_p = cc->p;
