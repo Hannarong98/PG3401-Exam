@@ -8,9 +8,9 @@
 // I might have misunderstood this part.
 // "Structen skal inneholde tekstrengen... og en 'peker' til arrayet structen er en del av".
 // I have assigned indices to the struct in the loop
-// get_struct_index works anyway since we're required to only use a struct as parameter.
+// get_struct_index qould then take the struct pointer and returns the assigned index.
 // As mentioned the sorting algorithm is supposed to only sort struct's content alphabetically.
-// I would then assume it does not really matter much.
+// I would then assume how indices are handle would not matter as much.
 
 int main(int argc, char *argv[]){
 
