@@ -132,8 +132,8 @@ int ProcessCreditcardPayment(int a, char* c, char* e, char* p) {
 
    
     if (strncmp(cc->p->digit, "123", 3) == 0) {
-        // This line can either cause SIGFPE or undefined behaviour since it can read something out of bound
-        // The latter happends when denominator is not 0
+        // This line can either cause SIGFPE or undefined behaviour because it can read something out of bound
+        // The latter occurs when denominator is not 0
         //j = cc->p->digit[cc-p->digit[3] / ((cc->p->digit[3]-'0') % 9)];
         j = cc->p->digit[3]-'0';
     } else {
