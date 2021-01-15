@@ -87,7 +87,7 @@ int main(int argc, char *argv[]){
                 fgets(client_message_buffer, sizeof(client_message_buffer), stdin);
                 client_message_buffer[strlen(client_message_buffer) - 1] = '\0';
                 while(strlen(client_message_buffer) == 0){
-                    printf("You can not send empty messages\n");
+                    printf("You cannot send empty messages\n");
                     fgets(client_message_buffer, sizeof(client_message_buffer), stdin);
                     client_message_buffer[strlen(client_message_buffer) - 1] = '\0';
                 }
